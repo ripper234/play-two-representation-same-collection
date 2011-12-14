@@ -13,9 +13,6 @@ public class Project extends Model {
         this.status = status;
     }
 
-    @ManyToOne
-    public Position position;
-
     public String theField;
     public String status;
 }
