@@ -13,12 +13,12 @@ import java.util.List;
 public class Position extends Model {
     public Position(){}
     public Position(Company companies) {
-        this.experience = companies;
+        this.companies = companies;
         this.projects = new ArrayList<Project>();
     }
 
     @OneToOne
-    public Company experience;
+    public Company companies;
 
     @ManyToOne
     public Person websiteConfig;
