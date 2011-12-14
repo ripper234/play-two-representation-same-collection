@@ -21,7 +21,7 @@ public class Position extends Model {
     public Company companies;
 
     @ManyToOne
-    public Person websiteConfig;
+    public Person person;
 
     @OneToMany
     public List<Project> projects;
